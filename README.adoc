@@ -1,0 +1,10 @@
+= Quarkus: Qute Demo
+
+* Projekt starten
+
+[source, bash]
+----
+./mvnw clean quarkus:dev
+----
+
+* Qute-Page erreichbar unter http://localhost:8080/details-page

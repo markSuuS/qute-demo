@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persons and Addresses</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Persons</h1>
+<table>
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birth Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#for person in persons}
+    <tr>
+        <td>{person.getFirstName()}</td>
+        <td>{person.getLastName()}</td>
+        <td>{person.getBirthDate()}</td>
+    </tr>
+    {/for}
+    </tbody>
+</table>
+
+<h1>Addresses</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Street</th>
+        <th>Number</th>
+        <th>Zip Code</th>
+        <th>City</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#for address in addresses}
+    <tr>
+        <td>{address.getStreet()}</td>
+        <td>{address.getNumber()}</td>
+        <td>{address.getZipCode()}</td>
+        <td>{address.getCity()}</td>
+    </tr>
+    {/for}
+    </tbody>
+</table>
+</body>
+</html>
